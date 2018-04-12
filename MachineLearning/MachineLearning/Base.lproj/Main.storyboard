@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MachineLearning" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="CX1-Er-LYO">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="375"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="CX1-Er-LYO" secondAttribute="height" id="Fgo-XY-gPa"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="khy-QT-NEq">
+                                <rect key="frame" x="140" y="396" width="95" height="39"/>
+                                <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="17"/>
+                                <state key="normal" title="Select Image"/>
+                                <connections>
+                                    <action selector="selectImage:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PTg-4b-6fJ"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wAO-JB-qb7">
+                                <rect key="frame" x="0.0" y="642.5" width="375" height="24.5"/>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="wAO-JB-qb7" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="99u-5o-nbv"/>
+                            <constraint firstItem="wAO-JB-qb7" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="JlS-Vb-lGn"/>
+                            <constraint firstItem="CX1-Er-LYO" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="MIG-78-fKb"/>
+                            <constraint firstItem="wAO-JB-qb7" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="MMB-NU-Oue"/>
+                            <constraint firstItem="khy-QT-NEq" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="MRS-Pa-xw8"/>
+                            <constraint firstItem="CX1-Er-LYO" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="Xbt-GT-9vq"/>
+                            <constraint firstItem="khy-QT-NEq" firstAttribute="top" secondItem="CX1-Er-LYO" secondAttribute="bottom" constant="21" id="he5-TL-5tM"/>
+                            <constraint firstItem="CX1-Er-LYO" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="wPh-XP-oPn"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="CX1-Er-LYO" id="b9k-wh-Hxu"/>
+                        <outlet property="label" destination="wAO-JB-qb7" id="TWn-UK-Zma"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="133.5832083958021"/>
+        </scene>
+    </scenes>
+</document>
